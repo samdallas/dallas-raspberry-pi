@@ -18,5 +18,5 @@ try:
   draw.text((0, 0), 'Hello World.', fill=0, align='left')
   display.display(display.getbuffer(image))
 
-except IoError as e:
+except IOError as e:
   print(e)
