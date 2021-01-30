@@ -9,8 +9,8 @@ pic_dir = 'pic'
 
 try:
   display = epd7in5_V2.EPD()
-  display.init(display.lut_full_update)
-  display.Clear(0)
+  display.init()
+  display.Clear()
 
   w = display.height
   h = display.width
