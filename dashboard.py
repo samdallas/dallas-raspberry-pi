@@ -5,6 +5,7 @@ from datetime import date
 import time
 
 # from: https://medium.com/swlh/create-an-e-paper-display-for-your-raspberry-pi-with-python-2b0de7c8820c
+# https://github.com/lemariva/ePaperWidgets/blob/master/e_paper_widget.py
 
 pic_dir = 'pic'
 display = epd7in5_V2.EPD()

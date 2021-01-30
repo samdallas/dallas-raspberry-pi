@@ -1,0 +1,22 @@
+find disk with `diskutil list`
+re-image SD card with `sudo diskutil eraseDisk FAT32 GERALDINE  MBRFormat /dev/disk2`
+install OS via raspberry pi imager
+https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
+  add ssh file
+https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
+  add wpa_supplicant.conf file
+https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md
+  ssh in:
+    get IP address from router login at http://192.168.1.1/
+    ssh in with `ssh pi@<IP>`
+https://www.waveshare.com/wiki/E-Paper_Driver_HAT
+  turn on SPI
+
+
+https://medium.com/swlh/create-an-e-paper-display-for-your-raspberry-pi-with-python-2b0de7c8820c
+
+
+turn off with: `sudo shutdown -h now`
+to do:
+- attach screen
+- add heat sinks
