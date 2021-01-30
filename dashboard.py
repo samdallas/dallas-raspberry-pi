@@ -8,6 +8,8 @@ import time
 
 pic_dir = 'pic'
 display = epd7in5_V2.EPD()
+w = display.height
+h = display.width
 image = Image.new('1', (h, w), 255)
 draw = ImageDraw.Draw(image)
 body = ImageFont.truetype(os.path.join(pic_dir, 'RobotoMono-Regular.ttf'), 48)
@@ -16,10 +18,6 @@ def main():
   try:
     display.init()
     display.Clear()
-
-    w = display.height
-    h = display.width
-    print (w, h)
 
     draw.text((0, 0), 'Hello World.', font=body, fill=0, align='left')
     display.display(display.getbuffer(image))
