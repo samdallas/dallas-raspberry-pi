@@ -46,7 +46,7 @@ def show_date():
 
 def show_items(items, x_loc):
   loc = 0
-  for i in items[0:4]:
+  for i in items[0:8]:
     draw.text((x_loc, loc), i, font=body, fill=0, align='right')
     loc += 50
 
